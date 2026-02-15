@@ -28,14 +28,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [2] /* _SYMBOLS */ = LAYOUT_split_3x6_3(
         XXXXXXX,  KC_TAB,    KC_BSLS,  KC_LCBR,  KC_RCBR,  KC_ASTERISK,   /****/ KC_KP_PLUS,   KC_1,  KC_2,  KC_3,  KC_KP_ASTERISK,  XXXXXXX,
         XXXXXXX,  KC_QUOT,   KC_PIPE,  KC_LPRN,  KC_RPRN,  KC_KP_MINUS,   /****/ KC_KP_MINUS,  KC_4,  KC_5,  KC_6,  KC_KP_SLASH,     XXXXXXX,
-        XXXXXXX,  KC_TILDE,  KC_GRV,   KC_LBRC,  KC_RBRC,  KC_UNDERSCORE, /****/ KC_KP_DOT,    KC_7,  KC_8,  KC_9,  KC_KP_EQUAL,     XXXXXXX,
+        XXXXXXX,  KC_TILDE,  KC_GRV,   KC_LBRC,  KC_RBRC,  KC_UNDERSCORE, /****/ KC_DOT,       KC_7,  KC_8,  KC_9,  KC_KP_EQUAL,     XXXXXXX,
 
                                              XXXXXXX, _______, KC_LSFT, /****/ KC_RSFT, XXXXXXX, KC_0
     ),
 
     [3] /* _FUNCS */ = LAYOUT_split_3x6_3(
         XXXXXXX,  KC_F1,        KC_F2,      KC_F3,    KC_F4,    KC_F5,   /****/ KC_F6,      KC_F7,        KC_F8,    KC_F9,     KC_F10,  XXXXXXX,
-        XXXXXXX,  XXXXXXX,      KC_VOLD,    KC_VOLU,  KC_MUTE,  XXXXXXX, /****/ KC_LEFT,    KC_DOWN,      KC_UP,    KC_RIGHT,  KC_F11,  XXXXXXX,
+        XXXXXXX,  KC_DELETE,    KC_VOLD,    KC_VOLU,  KC_MUTE,  XXXXXXX, /****/ KC_LEFT,    KC_DOWN,      KC_UP,    KC_RIGHT,  KC_F11,  XXXXXXX,
         XXXXXXX,  TO(_GAMING),  TO(_BASE),  XXXXXXX,  XXXXXXX,  CW_TOGG, /****/ LSG(KC_4),  LCG(KC_SPC),  XXXXXXX,  XXXXXXX,   KC_F12,  XXXXXXX,
 
                                               XXXXXXX, XXXXXXX, XXXXXXX, /****/ XXXXXXX, _______, MO(_RGB)
@@ -111,7 +111,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     const uint8_t vol_keys[] = { 11, 16, 19 };
     const uint8_t arrow_keys[] = { 35, 38, 43, 46 };
     const uint8_t bt_keys[] = { 15, 20, 21 };
-    const uint8_t macos_keys[] = { 34, 39 };
+    const uint8_t macos_keys[] = { 7, 22, 34, 39 };
     const uint8_t rgb_keys[] = { 11, 12, 15, 16, 19, 20, 21, 22, 23 };
 
     HSV hrm_hsv = { HSV_CYAN };
